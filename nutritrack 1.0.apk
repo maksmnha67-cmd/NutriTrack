@@ -1,3 +1,1 @@
-git rm путь/к/файлу
-git commit -m "Remove file"
-git push
+
