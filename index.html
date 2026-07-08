@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack — Твой карманный трекер калорий</title>
+    <style>
+        :root {
+            --bg-color: #0baf54;
+            --card-bg: #073b31;
+            --text-color: #ffffff;
+            --accent-color: #ff5722;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .logo-card {
+            background-color: var(--card-bg);
+            border-radius: 40px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        .logo-card img {
+            width: 160px;
+            height: 160px;
+            display: block;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 45px;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 24px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .feature-text h3 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 2px;
+        }
+
+        .feature-text p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        .btn-download {
+            display: block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-download:active {
+            transform: scale(0.96);
+            box-shadow: 0 3px 10px rgba(255, 87, 34, 0.4);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>NutriTrack</h1>
+        <p class="tagline">— Контролируй калории, выбирай еду правильно!</p>
+
+        <div class="logo-card">
+            <!-- Сюда временно ставим красивую иконку, пока не укажем точный путь к твоей -->
+            <svg width="160" height="160" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 75C22.5 65 22.5 45 35 35C47.5 25 47.5 45 35 75Z" stroke="#00e676" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M55 78C73 78 80 62 80 48C80 34 68 34 55 34C42 34 30 44 30 58C30 72 40 78 55 78Z" stroke="#ff5722" stroke-width="6"/>
+                <path d="M55 34C55 25 62 18 62 18" stroke="#ff5722" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🤖</div>
+                <div class="feature-text">
+                    <h3>Android</h3>
+                    <p>Полная поддержка и стабильная работа на устройствах Андроид</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">⚖️</div>
+                <div class="feature-text">
+                    <h3>Вес приложения</h3>
+                    <p>Программа весит всего 15+ МБ — установится мгновенно</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">⚙️</div>
+                <div class="feature-text">
+                    <h3>Оптимизация</h3>
+                    <p>Идеальная и плавная оптимизация интерфейса на всех смартфонах</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ссылка на скачивание твоего APK -->
+        <a href="nutritrack1.1.apk" class="btn-download" download>Скачать APK</a>
+
+        <footer>
+            <p>&copy; 2026 NutriTrack. Все права защищены.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
 
