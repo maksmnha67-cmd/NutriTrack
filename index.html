@@ -119,8 +119,51 @@
             box-shadow: 0 3px 10px rgba(255, 87, 34, 0.4);
         }
 
-        footer {
+        /* Стили для блока связи по Email */
+        .contact-box {
             margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-box p {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        .btn-email {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 12px 24px;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-email svg {
+            margin-right: 10px;
+            color: var(--accent-color); /* Иконка конверта в цвет нашего оранжевого яблока */
+        }
+
+        .btn-email:active {
+            transform: scale(0.96);
+            background-color: #052922;
+        }
+
+        footer {
+            margin-top: 30px;
             font-size: 0.8rem;
             opacity: 0.7;
         }
@@ -133,10 +176,8 @@
         <p class="tagline">— Контролируй калории, выбирай еду правильно!</p>
 
         <div class="logo-card" style="background: none; padding: 0; box-shadow: none;">
-    <img src="Nutrilogo.png" alt="NutriTrack" style="width: 195px; height: 195px; display: block; border-radius: 35px;">
-            
+            <img src="Nutrilogo.png" alt="NutriTrack" style="width: 195px; height: 195px; display: block; border-radius: 35px;">
         </div>
-     
 
         <div class="features">
             <div class="feature-item">
@@ -164,8 +205,20 @@
             </div>
         </div>
 
-        <!-- Ссылка на скачивание твоего APK -->
+        <!-- Ссылка на скачивание APK -->
         <a href="nutritrack1.1.apk" class="btn-download" download>Скачать APK</a>
+
+        <!-- Блок обратной связи -->
+        <div class="contact-box">
+            <p>Есть вопросы или предложения?</p>
+            <a href="mailto:nutritrack.v1@gmail.com?subject=NutriTrack%20Feedback" class="btn-email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Связаться по Email
+            </a>
+        </div>
 
         <footer>
             <p>&copy; 2026 NutriTrack. Все права защищены.</p>
@@ -174,4 +227,3 @@
 
 </body>
 </html>
-
