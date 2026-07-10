@@ -10,7 +10,7 @@
             --card-bg: #073b31;
             --text-color: #ffffff;
             --accent-color: #ff5722;
-            --rustore-color: #2563eb; /* Фирменный синий цвет RuStore */
+            --rustore-color: #2563eb;
         }
 
         * {
@@ -101,7 +101,7 @@
             opacity: 0.85;
         }
 
-        /* Контейнер для двух кнопок скачивания */
+        /* Контейнер для двух кнопок */
         .download-group {
             display: flex;
             flex-direction: column;
@@ -124,7 +124,7 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        /* Кнопка GitHub APK (Твоя оригинальная оранжевая) */
+        /* Кнопка APK (Оранжевая) */
         .btn-apk {
             background-color: var(--accent-color);
             box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
@@ -135,7 +135,7 @@
             box-shadow: 0 3px 10px rgba(255, 87, 34, 0.4);
         }
 
-        /* Кнопка RuStore (Синяя брендовая) */
+        /* Кнопка RuStore (Синяя) */
         .btn-rustore {
             background-color: var(--rustore-color);
             box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
@@ -233,7 +233,7 @@
         </div>
 
         <div class="download-group">
-            <a href="https://github.com/ССЫЛКА_НА_ТВОЙ_РЕПОЗИТОРИЙ/releases/download/v1.1/nutritrack1.1.apk" class="btn-download btn-apk" download>
+            <a href="nutritrack1.1.apk" class="btn-download btn-apk" download>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="7 10 12 15 17 10"></polyline>
@@ -242,13 +242,13 @@
                 Скачать APK
             </a>
 
-            <a href="https://apps.rustore.ru/app/ЛИНОК_НА_ТВОЁ_ПРИЛОЖЕНИЕ" class="btn-download btn-rustore" target="_blank">
+            <a href="https://www.rustore.ru/catalog/app/com.shy.nutritrack" class="btn-download btn-rustore" target="_blank">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <line x1="12" y1="8" x2="12" y2="16"></line>
                     <line x1="8" y1="12" x2="16" y2="12"></line>
                 </svg>
-                Скачать с RuStore
+                В RuStore
             </a>
         </div>
 
